@@ -5,9 +5,6 @@ const routes = require("./routes/routes");
 require("dotenv").config();
 
 console.log(process.env);
-// const url_string =
-//   "mongodb+srv://admin:admin@cluster0.y9p4g.mongodb.net/quiz_app?retryWrites=true&w=majority";
-
 mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true }).then(() => {
   console.log("server connected");
   const app = express();
