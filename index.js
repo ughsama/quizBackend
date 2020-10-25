@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const routes = require("./routes/routes");
 require("dotenv").config();
 
-console.log(process.env);
 mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true }).then(() => {
   console.log("server connected");
   const app = express();
